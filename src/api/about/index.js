@@ -1,10 +1,11 @@
-//import Router from 'express';
+//імпорт
 const express = require("express");
 const aboutRouter = express.Router();
-
+//метод обробки запиту GET
 aboutRouter.get('/', function (request, response){
-    response.send({message:"Андрашко Юрій"});
+    response.send({
+        message:"Андрашко Юрій Васильович"
+    });
 });
-
-//export default aboutRouter();
+//експорт
 module.exports = aboutRouter;
